@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Thiết kế mạch khuếch đại dùng opamp tạo sóng ngõ ra và kiểm tra lại bằng proteus}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Câu a.$\mathbf {v_o = 0.5 \cdot v_1 - 3 \cdot v_2 + 4 \cdot v_3}$}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Tính toán mạch khuếch đại dùng opamp}{2}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Kiểm tra lại bằng proteus}{3}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}Câu b.$\mathbf {v_o = 0.5 \cdot v_1 - 3 \cdot v_2 + 4 \cdot v_3}$}{3}{subsection.1.2}%
