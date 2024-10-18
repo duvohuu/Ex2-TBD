@@ -28,6 +28,26 @@
                                     &= sin(100\pi \cdot t) + 100\pi \cdot cos(100\pi \cdot t)
             \end{align*}
         \subsubsection{Kiểm tra lại bằng proteus}
+            \begin{itemize}
+                \item Sử dụng Proteus để mô phỏng mạch như hình: 
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=120mm, height=80mm]{pictures/result2_a_1.png}
+                    \caption{Mô phỏng proteus bài 2 hình thứ nhất}					
+                \end{figure}
+                \item Các linh kiện sử dụng: Opamp, Resistor, Capacitor, Voltage Source Sine, Ground.
+                \item Chọn $R_{1} = R_{2} = R_{3} = R_{4} = R_{5} = 10k\Omega, R_{I} = 100k\Omega, C_{I} = 10\mu F$. $V_{1} = sin(2\pi t)$. \\
+                $\Rightarrow V_{out} = sin(100\pi t) + 2\pi cos(2\pi t)$. \\
+                Đặt $V_{out} = R \cdot sin{\omega t + \phi}$, với: $R = \sqrt{1^2 + (2\pi)^2} = 6.3622, \phi = \arctan(\frac{2\pi}{1}) \approx 81^\circ$.
+                \item Kết quả mô phỏng proteus.
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=120mm, height=80mm]{pictures/result2_a_2.png}
+                    \caption{Kết quả mô phỏng proteus bài 2 hình thứ nhất}
+                \end{figure}
+                \item Từ kết quả so sánh giữa $V_{1}$ và $V_{out}$ ta thấy rằng $V_{out}$ trễ pha khoảng hơn $90^\circ$ so với $V_{1}$ và $V_{out}$ có giá trị cực đại khoảng $6.36$.
+            \end{itemize}
+            \hspace*{0.6cm}$\Rightarrow$ Kết quả mô phỏng gần đúng với tính toán.
     \subsection{Hình thứ hai}
         \begin{figure}[H]
             \centering
@@ -44,13 +64,34 @@
 				\end{cases}
 			\]
             \hspace*{0.6cm}Áp dụng định luật K1 đối với node B ta có: 
-            \begin{align*}
+            \begin{align}
                 \frac{V_{-}}{R} = \frac{V_{o} - V_{-}}{R} \Rightarrow V_{o}= 2V
-            \end{align*}
+            \end{align}
             \hspace*{0.6cm}Áp dụng định luật K1 đối với node A ta có:
-            \begin{align*}
-                \frac{V_{in} - V_{+}}{R} = \frac{C \cdot dV_{+}}{dt} - (\frac{V_{out} - V_{+}}{R}) \Rightarrow V_{-} = V_{1}
-            \end{align*}
+            \begin{align}
+                \frac{V_{in} - V_{+}}{R} = \frac{C \cdot dV_{+}}{dt} - (\frac{V_{out} - V_{+}}{R}) 
+            \end{align}
+            \hspace{0.6cm}Từ (7) và (8) $\Rightarrow V_{out} = \frac{2}{RC} \int V_{in} dt$ \\
+        \subsection{Kiểm tra lại bằng proteus}
+            \begin{itemize}
+                \item Sử dụng Proteus để mô phỏng mạch như hình: 
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=100mm, height=90mm]{pictures/result2_b_1.png}
+                    \caption{Mô phỏng proteus}					
+                \end{figure}
+                \item Các linh kiện sử dụng: Opamp, Resistor, Capacitor, Voltage Source Sine, Ground.
+                \item Chọn $R = 10k\Omega, C = 10\mu F$. $V_{in} = 1sin(100\pi t)$. \\
+                $\Rightarrow V_{out} = 20\int sin(100\pi t) dt = -\frac{20}{100\pi}cos(100\pi t) + Constant = \frac{20}{100\pi}cos(100\pi t+ pi) + Constant$.
+                \item Kết quả mô phỏng proteus.
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=110mm, height=80mm]{pictures/result2_b_2.png}
+                    \caption{Kết quả mô phỏng proteus bài 2 hình thứ 2}
+                \end{figure}
+                \item Từ kết quả so sánh giữa $V_{in}$ và $V_{out}$ ta thấy rằng $V_out$ trễ pha $\pi$ so với $V_in$ và $V_out$ có khoảng dao động $L \approx 0.13$ tương ứng với 2 lần biên độ dao động điều hòa: $2 \cdot A = 2 \cdot \frac{20}{100 \pi} = 0.127$.
+            \end{itemize}
+            \hspace*{0.6cm}$\Rightarrow$ Kết quả mô phỏng gần đúng với tính toán.
 
 
 

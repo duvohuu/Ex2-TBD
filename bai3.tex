@@ -2,14 +2,14 @@
 \section{Thiết kế mạch schmitt-trigger với $V_{low-threshold} = 1V$, $V_{high-threshold} = 4V$, $V_{ref} = 5V$, $V_{out} = 5V$, và kiểm tra lại bằng proteus}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{pictures/smith}
+    \includegraphics[width=0.7\textwidth]{pictures/topic3.png}
     \caption{Mạch schmitt-trigger}
 \end{figure}
     \subsection{Khi $V_{out} = 0V$}
 Ta có sơ đồ đấu nối như sau:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{pictures/Vo_0.png}
+    \includegraphics[width=0.35\textwidth]{pictures/topic3_a.png}
     \caption{Khi $V_{out} = 0V$}
 \end{figure}
 \begin{itemize}
@@ -20,7 +20,7 @@ Ta có sơ đồ đấu nối như sau:
 Ta có sơ đồ đấu nối như sau:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{pictures/Vo_5.png}
+    \includegraphics[width=0.35\textwidth]{pictures/topic3_b.png}
     \caption{Khi $V_{out} = 5V$}
 \end{figure}
 \begin{itemize}
@@ -42,7 +42,7 @@ Thay (3) vào (4) ta được:
 Chọn x = $R_1$ = 60k$\Omega$, y = z = $R_2 = R_3 =$ 20k$\Omega$.\\
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{pictures/smith2}
+    \includegraphics[width=0.7\textwidth]{pictures/result3_a}
     \caption{Mạch schmitt-trigger sau khi tính toán các giá trị điện trở}
 \end{figure}
 \subsection{Tìm mối quan hệ giữa $V_{out}$ và $V_{in}$}
@@ -80,7 +80,7 @@ Với $V_{in} = 5sin(100\pi t)$, $V_{ref} = 4sin(100/pi t)$.
 \hspace*{0.6cm}Sau khi nhập các giá trị $V_{in} = 5V$, $V_{ref} = 4V$ với tần số 50Hz vào mạch schmitt-trigger, ta thu được kết quả như sau:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{pictures/smithplot}
+    \includegraphics[width=100mm, height = 70mm]{pictures/result3_b.png}
     \caption{Kết quả mô phỏng mạch schmitt-trigger}
 \end{figure}
 Căn cứ vào đồ thị ta thấy giá trị điện áp đầu ra có biên độ = 10.333 và pha ban đầu giống với $V_{out} = 10.333sin(100\pi  t)$ đã tìm được ở trên\\
