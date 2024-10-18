@@ -3,3 +3,9 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Tính toán mạch khuếch đại dùng opamp}{2}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}Kiểm tra lại bằng proteus}{3}{subsubsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.2}Câu b.$\mathbf {v_o = 0.5 \cdot v_1 - 3 \cdot v_2 + 4 \cdot v_3}$}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Thiết kế mạch schmitt-trigger với $V_{low-threshold} = 1V$, $V_{high-threshold} = 4V$, $V_{ref} = 5V$, $V_{out} = 5V$, và kiểm tra lại bằng proteus}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Khi $V_{out} = 0V$}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Khi $V_{out} = 5V$}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Thiết kế mạch Schmitt-Trigger}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Tìm mối quan hệ giữa $V_{out}$ và $V_{in}$}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Kiểm tra lại bằng proteus}{7}{subsection.2.5}%
